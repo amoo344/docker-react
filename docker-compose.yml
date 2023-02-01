@@ -3,9 +3,7 @@ services:
   nginx-react:
     image: reactapp:latest
     container_name: myreactapp
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
     ports:
       - 80:80
     environment:
